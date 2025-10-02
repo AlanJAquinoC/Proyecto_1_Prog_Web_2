@@ -1,0 +1,371 @@
+.fondo_principal_1{
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo1_biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/*Estilo de la cabecera*/
+.logo_biblioteca{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+.cabecera_1{
+    background-color: burlywood;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.cabecera_2{
+    background-color: wheat;
+}
+nav#menu-principal ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 400px;
+}
+nav#menu-principal li {
+    margin: 9px 15px;
+}
+nav#menu-principal a {
+    font-weight: bold;
+    color:#333;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+}
+nav#menu-principal a::before,nav#menu-principal a::after{
+    content: '';
+    border-bottom: 2px solid chocolate;
+    position: absolute;
+    /* transition: 0.2s ; */
+    width: 60%;
+    bottom: 7px;
+    opacity: 0;
+}
+nav#menu-principal a.activo::before,
+nav#menu-principal a:hover::before{
+    left: 15px;
+    opacity: 1;
+}
+nav#menu-principal a.activo::after,
+nav#menu-principal a:hover::after{
+    opacity: 1;
+    right: 13px;
+}
+/*                                  Estilo del cuerpo de la pagina*/
+.autores_influyentes_1{
+    margin-left: 200px;
+}
+.autor_1{
+    background-image: url(autor_1.jpg);
+}
+.autor_2{
+    background-image: url(autor_2.jpg);
+}
+.autor_3{
+    background-image: url(autor_3.jpeg);
+}
+.autor_1, .autor_2, .autor_3{
+    /* margin: 20px auto; */
+    display: inline-block;
+    max-width: 90%;
+    transition: transform 0.3s;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+.autor_1:hover, .autor_2:hover, .autor_3:hover{
+    transform: scale(1.05);
+}
+.texto{
+    margin: 220px 0 0 0;
+    position:unset;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.libros_muestra_principal{
+    background-color:rgb(200, 192, 123);
+    margin-top: 50px;
+}
+.libros_muestra_principal_1{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.libros_muestra_principal_2{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.libro_muestra{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background-color:rgb(239, 228, 132);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+h2{
+    text-align: center;
+    color: chocolate;
+    font-size: 50px;
+}
+.categorias_principal{
+    background-color: rgb(227, 202, 169);
+    padding: 20px;
+    text-align: center;
+}
+.categorias_2{
+    display: flex;
+    justify-content: center;
+}
+.categorias_3{
+    text-decoration: none;
+    margin-left: 60px;
+    padding: 10px;
+}
+.categoria_img{
+    width: 180px;
+    height: 300px;
+    padding: 7px;
+    box-shadow: 0 4px 8px chocolate;
+    transition: transform 0.3s;
+}
+.categoria_img:hover{
+    transform: scale(1.05);
+}
+.categoria_4{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+    display: block;
+    position: relative;
+}
+.categoria_4::before, .categoria_4::after{
+    content: '';
+    border-bottom: 2px solid chocolate;
+    position: absolute;
+    /* transition: 0.2s ; */
+    width: 65%;
+    bottom: 0;
+    opacity: 0;
+}
+#categoria_texto_1::before,
+.categoria_4:hover::before{
+    left: 40px;
+    opacity: 1;
+}
+#categoria_texto_1::before,
+.categoria_4:hover::after{
+    right: 20px;
+    opacity: 1;
+}
+/*                               Estilo de la sección de redes sociales */
+.redes_sociales_principal{
+    background-color:#333;
+    padding: 20px;
+}
+.redes_sociales{
+    margin-top: 20px;
+    width: 6%;
+    height: 6%;
+    border-color: aliceblue;
+    border: 5px solid white;
+    margin-left: 8%;
+    border-radius: 50%;
+}
+.texto_redes_sociales{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+/*                               Estilo del pie de página */
+.footer_redes_sociales{
+    display: grid;
+    min-height: 100px;
+    grid-template-rows: auto 1fr auto;
+}
+.logo_biblioteca_footer{
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+}
+footer{
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+/*                                        Estilo de la pagina 2 */
+.cuerpo_principal_2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.categoria_img_2{
+    width: 180px;
+    height: 300px;
+    padding: 7px;
+    box-shadow: 0 4px 8px chocolate;
+    border-radius: 70px;
+    transition: transform 0.3s;
+}
+.categoria_img_2:hover{
+    transform: scale(1.15);
+}
+/*                                        Estilo de la pagina 3 */
+.cuerpo_principal_3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+.fondo_principal_3{
+    background-image: url(fondo_3_biblioteca.jpg);
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.cuerpo_principal_3{
+    background-color:aliceblue;
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+}
+.texto_principal_1{
+    font-size: 60px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    margin: 150px auto;
+    max-width: 600px;
+    line-height: 1.6;
+    border: 7px solid chocolate;
+}
+.texto_principal_4{
+    background-color: aliceblue;
+    padding: 40px;
+    margin-top: -135px;
+    width: 1000px;
+    height: 300px;
+    margin-left: 80px;
+}
+/*                                        Estilo de la pagina 4 */
+.cuerpo_principal_4{
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo1_biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.noticias_principal{
+    background-color: aliceblue;
+    margin-top: -200px;
+    text-align: center;
+}
+.texto_principal_noticias{
+    margin-top: 200px;
+    padding: 40px;
+}
+.not_2{
+    display: flex;
+    justify-content: center;
+}
+.not_3{
+    text-decoration: none;
+    margin-left: 60px;
+    padding: 10px;
+}
+/* .categoria_4{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+    display: block;
+    position: relative;
+}
+.categoria_4::before, .categoria_4::after{
+    content: '';
+    border-bottom: 2px solid chocolate;
+    position: absolute;
+    /* transition: 0.2s ; */
+    /* width: 65%;
+    bottom: 0;
+    opacity: 0;
+}
+#categoria_texto_1::before,
+.categoria_4:hover::before{
+    left: 40px;
+    opacity: 1;
+}
+#categoria_texto_1::before,
+.categoria_4:hover::after{
+    right: 20px;
+    opacity: 1;
+} */ 
+/* .categoria_img{
+    width: 180px;
+    height: 300px;
+    padding: 7px;
+    box-shadow: 0 4px 8px chocolate;
+    transition: transform 0.3s;
+}
+.categoria_img:hover{
+    transform: scale(1.05);
+} */
+/* .categoria_img_2{
+    width: 180px;
+    height: 300px;
+    padding: 7px;
+    box-shadow: 0 4px 8px chocolate;
+    border-radius: 70px;
+    transition: transform 0.3s;
+}
+.categoria_img_2:hover{
+    transform: scale(1.15);
+} */
+/* #categoria_texto_1::before,
+.categoria_4:hover::before{
+    left: 40px;
+    opacity: 1;
+}
+#categoria_texto_1::before,
+.categoria_4:hover::after{
+    right: 20px;
+    opacity: 1;
+} */
