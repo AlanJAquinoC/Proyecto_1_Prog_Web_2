@@ -1,154 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="diseño2.css">
-    <title>Practica2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css_propio/estructura.css">
+    <title>Celebraciones</title>
 </head>
 <body>
-    <header class="inicio" id="inicio">
-        <h1>ALAN JOSUE AQUINO CONDORI</h1>
-    </header>
-    <nav>
-        <a class="links" href="#inicio">Biografia</a>
-        <a class="links" href="#sobremi">Sobre mi</a>
-        <a class="links" href="#proyectos">Proyectos</a>
-        <a class="links" href="#contacto">Contacto</a>
-    </nav>
-    <br><br>
-    <div>
-    <h2>Biografia (Un poco de mi...):</h2>
-        <p class="biografia"><i>Mi nombre es Alan Aquino, tengo 18 años, naci en Cochabamba, por eso mi plato favorito es el chicharron de cerdo al estilo cochabambino.
-            Me gusta la natacion, fui nadador profesional durante 3 años, pero por mis clases y demas lo deje, tambien me encanta ver los juegos olimpicos,
-            mi pasatiempo favorito es leer, ver videos edificantes y escuchar musica cristiana. Fui presidente de mi excolegio "La Paz A" por 2 años, 
-            tengo estudios en oratoria y liderazgo, conocimientos juridicos y algunos conocimientos economicos, tambien soy lider de pre adolescentes y adolescentes en mi iglesia "Escudo de Fe", me encanta la oratoria y el liderazgo, por eso me gusta dar charlas y clases
-            sobre eso en mi iglesia, me gusta mucho la tecnologia, por eso estoy estudiando Informatica, me encanta aprender cosas nuevas,
-            en fin soy <b>Alan Aquino un hijo de Dios.</b></i>
-        </p>
+    <div class="padre" class="container-fluid">
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Todos Santos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="html/todos_1.html">Historia</a></li>
+                                    <li><a class="dropdown-item" href="./html/todos_2.html">Costumbres</a></li>
+                                    <li><a class="dropdown-item" href="./html/todos_3.html">Gastronomia</a></li>
+                                    <li><a class="dropdown-item" href="./html/todos_4.html">"La Mesa"</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Halloween
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./html/hallo_1.html">Historia</a></li>
+                                    <li><a class="dropdown-item" href="./html/hallo_2.html">Costumbres</a></li>
+                                    <li><a class="dropdown-item" href="./html/hallo_3.html">Gastronomia</a></li>
+                                    <li><a class="dropdown-item" href="./html/hallo_4.html">Dulce o Truco</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="contenido" class="container-fluid">
+            <div class="contenido_1">TODOS SANTOS</div>
+            <div class="letra">CONOZCAMOS Y APRENDAMOS JUNTOS MAS SOBRE NUESTRA MARAVILLOSA CULTURA BOLIVIANA. <center><br>VIVA BOLIVIAAAA!!!!!!!!!!!</center></div>
+        </div>
+        <div class="ads" class="container-fluid">
+            <b>Publicidad</b>
+                <div class="card" style="width: 18rem;">
+                <img src="img/ICEA_2025.jpg" class="imagen_1" class="card-img-top" alt="ICEA_2025">
+                <div class="card-body">
+                    <h5 class="card-title">Intimidad con el Amado</h5>
+                    <p class="card-text">Congreso Intimidad con el Amado 2025. Se parte de este espectacular tiempo de edificacion.</p>
+                    <a href="https://www.intimidadconelamado.com/" target="_blank" class="btn btn-primary">Adquiere tu tikcet</a>
+                </div>
+            </div>
+        </div>
+        <div class="pie" class="container-fluid">
+            <b>Elaborado por Alan Aquino - 2025</b>
+        </div>
     </div>
-    <h2 id="sobremi">Sobre mi:</h2>
-    <section class="sobremi">
-        <img class="mi_imagen" src="mi_imagen.jpg" alt="">
-        <blockquote>
-            <dl>
-                <dt><h3>Mis intereses</h3></dt>
-                <dd class="intereses"><li>Me interesan las personas, entenderlas y ayudarlas, por amor a Dios, yo lo amo mucho, 
-                    al ayudar a otros correspondo a como el y mis hermanos de mi iglesia me ayudaron cuando todo estaba nublado 
-                    El hizo brillar mi vida.</li>
-                    <br><li>Tambien quiero tener buenas notas en la universidad, luego tener unas empresas.</li>
-                    <br><li>Por otro lado, dar conferencias y clases sobre liderazgo, oratoria, finanzas y tecnologia.</li>
-                </p></dd>
-            </dl>
-        </blockquote>
-        <blockquote>
-            <dl>
-                <dt><h3>Hobbies y Habilidades</h3></dt>
-                    <dd>
-                        <table>
-                            <tr>
-                                <th><h3>Hobbies</h3></th>
-                                <th><h3>Habilidades</h3></th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <ul>
-                                        <li><b>Leer</b> libros</li>
-                                        <li><b>Ver</b> noticias</li>
-                                        <li><b>Escuchar</b> musica</li>
-                                        <li><b>Ver</b> videos sobre programacion</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li><b>Desarrollar</b> para un fin edificante.</li>
-                                        <li><b>Hablar</b> en publico.</li>
-                                        <li><b>Persuadir</b> a las personas.</li>
-                                        <li><b>Investigar</b></li>
-                                    </ul>
-                            </tr>
-                    </table>
-                </dd>
-            </dl>
-        </blockquote>
-    </section>
-    <br>
-    <a class="links2" href="#inicio">Inicio</a>
-    <section class="proyectos" id="proyectos">
-        <h2>Proyectos:</h2>
-        <blockquote>
-            <dl>
-                <table class="tabla_proyectos" border="2">
-                    <tr>
-                        <th><h3>Nombre</h3></th>
-                        <th><h3>Descripcion</h3></th>
-                        <th><h3>Estado</h3></th>
-                    </tr>
-                    <tr>
-                        <td>Actualizate</td>
-                        <td>Digitalizar las tareas de la sociedad dependiendo las distintas areas laborales, 
-                            por medio de apps y paginas web.</td>
-                        <td>Planeado</td>
-                    </tr>
-                    <tr>
-                        <td>Mi identidad</td>
-                        <td>Crear una app y pagina web para ayudar a las personas a encontrar su identidad en Cristo.</td>
-                        <td>Planeado</td>
-                    </tr>
-                    <tr>
-                        <td>Ruenueva</td>
-                        <td>Viajar por el mundo compartiendo lo que aprendi</td>
-                        <td>Planeado</td>
-                    </tr>
-                </table>
-            </dl>
-        </blockquote>
-    </section>
-    <br>
-    <a class="links2" href="#inicio">Inicio</a>
-    <section class="contacto" id="contacto">
-        <h2>Contacto:</h2>
-        <form action=""></form>
-        <blockquote>
-            <dl>
-                <form>
-                    <b>Ingrese Nombre: </b> <input type="text" name="nombre">
-                    <br><br>
-                    <b>Email: </b> <input type="email" name="correo">
-                    <br><br>
-                    <b>Mensaje: </b> <input type="text" name="mensaje">
-                    <br><br>
-                    <input type="button" value="Enviar">
-                </form>
-            </dl>
-        </blockquote>
-    </section>
-    <br><a class="links2" href="#inicio">Inicio</a>
-    <br>
-    <h3>Redes sociales favoritas: </h3>
-    <span class="redes">
-        <a href="https://www.facebook.com/" target="_blank">
-            <img class="iconos" src="facebook.png" alt="">
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-            <img class="iconos" src="insta.jpeg" alt="">
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-            <img class="iconos" src="youtube.png" alt="">
-        </a>
-        <a href="https://www.tiktok.com/" target="_blank">
-            <img class="iconos" src="tiktok.png" alt=""></a>
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img class="iconos" src="linkedin.png" alt=""></a>
-        <a href="https://www.whatsapp.com/" target="_blank">
-            <img class="iconos" src="whastsap.jpg" alt=""></a>
-        </span>
-        <br><br>
-        <br><img class="chao" src="chao.gif" alt="">
-    <br><a class="links2" href="#inicio">Inicio</a>
-    <br><br>
-    <footer>
-        Hecho por: Alan Josue Aquino Condori
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
